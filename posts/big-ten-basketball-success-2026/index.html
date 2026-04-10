@@ -9,7 +9,7 @@
 <meta name="author" content="Jake Ostdiek">
 <meta name="dcterms.date" content="2026-04-10">
 
-<title>2026 B1G Basketball Sets a Standard – Sports Stats from the mind of Jake Ostdiek</title>
+<title>2026 Big Ten Basketball Was More than Elite – Sports Stats from the mind of Jake Ostdiek</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -320,7 +320,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">2026 B1G Basketball Sets a Standard</h1>
+      <h1 class="title">2026 Big Ten Basketball Was More than Elite</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">ncaa</div>
                 <div class="quarto-category">basketball</div>
@@ -362,8 +362,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Every March the same debate dominates the college sports scene, which conference is truly the best? The Big 12 consistently has a gauntlet of a regular season, and the SEC prides itself on having top tier athletes, but these narritives don’t win championships. When you take away the loud, often misleading, voices and take a look at the numbers from the 2025-2026 season, reality shows its true colors. The Big Ten didn’t just participate in this historic season, they dominated it.</p>
-<p>The B1G set a completely new standard this year, proving they were better than the SEC, the Big 12, and everyone else contending for the title.</p>
+<p>Every March the same debate dominates the college sports scene, which conference is truly the best? The Big 12 consistently has a gauntlet of a regular season, and the SEC prides itself on having top tier athletes, but these narratives don’t win championships. When you take away the loud, often misleading, voices and take a look at the numbers from the 2025-2026 season, reality shows its true colors. The Big Ten didn’t just participate in this historic season, they dominated it.</p>
+<p>The Big Ten set a completely new standard this year, proving they were better than the SEC, the Big 12, and everyone else contending for the title.</p>
 <p>The Non-Conference Start: Winning by Margins</p>
 <div class="cell">
 <details class="code-fold">
@@ -430,7 +430,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> date_of_game, <span class="at">y =</span> avg_score_diff, <span class="at">group =</span> Conf),</span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"grey"</span>,</span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.5</span>,</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">linewidth =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(</span>
 <span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> chart1_data_sec,</span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> date_of_game, <span class="at">y =</span> avg_score_diff, <span class="at">group =</span> Conf),</span>
@@ -484,7 +484,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>To find the true strength of a conference, you have to first look at the non-conference competition that starts off every season. As soon as January hits, conference rivals go at it, dragging down overall conference metrics. But in the non-conference slate? That is where you see what each conference is really made of.</p>
 <p>When we look at all games played before January 1st, 2026 (Average start date for conference games), the Big Ten teases its dominance.</p>
-<p>The data reveals a consistent trend - The Big Ten wasn’t just winning games, they were dismantling defenses and locking down offenses. Looking at the average scoring differentials, the B1G separated itself from the pack early. While other conferences hovered near the baseline of “just okay”, the Big Ten consistently was outscoring their opponents by significant margins. This established a level of dominance before conference play was even a worry.</p>
+<p>The data reveals a consistent trend - The Big Ten wasn’t just winning games, they were dismantling defenses and locking down offenses. Looking at the average scoring differentials, the Big Ten separated itself from the pack early. While other conferences hovered near the baseline of “just okay”, the Big Ten consistently was outscoring their opponents by significant margins. This established a level of dominance before conference play was even a worry.</p>
 <p>The Test of Resilience: Strength of Schedule</p>
 <div class="cell">
 <details class="code-fold">
@@ -531,44 +531,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> chart2_data_sec,</span>
 <span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> avg_conf_sos, <span class="at">y =</span> <span class="fu">reorder</span>(Conf, avg_conf_sos), <span class="at">size =</span> num_teams),</span>
 <span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"red3"</span>,</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
 <span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
 <span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> chart2_data_bigeast,</span>
 <span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> avg_conf_sos, <span class="at">y =</span> <span class="fu">reorder</span>(Conf, avg_conf_sos), <span class="at">size =</span> num_teams),</span>
 <span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"navy"</span>,</span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
 <span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">data=</span>chart2_data_bigten,</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> chart2_data_bigten,</span>
 <span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> avg_conf_sos, <span class="at">y =</span> <span class="fu">reorder</span>(Conf, avg_conf_sos), <span class="at">size =</span> num_teams),</span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">color=</span><span class="st">"deepskyblue3"</span>) <span class="sc">+</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(</span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    <span class="at">data=</span>chart2_data,</span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> avg_conf_sos, <span class="at">y =</span> <span class="fu">reorder</span>(Conf, avg_conf_sos), <span class="at">label =</span> Conf),</span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"black"</span>,</span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    <span class="at">hjust =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"rect"</span>, <span class="at">fill=</span><span class="st">"blue"</span>, <span class="at">alpha=</span><span class="fl">0.1</span>,</span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>           <span class="at">xmin=</span><span class="fl">8.5</span>, <span class="at">xmax=</span><span class="cn">Inf</span>,</span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>           <span class="at">ymin=</span><span class="dv">5</span>, <span class="at">ymax=</span><span class="cn">Inf</span>) <span class="sc">+</span></span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span><span class="fl">9.5</span>, <span class="at">y=</span><span class="fl">9.7</span>, <span class="at">label=</span><span class="st">"Tough Schedules"</span>), <span class="at">size=</span><span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"The Big Ten dominated with a gauntlet of schedules"</span>,</span>
-<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"The B1G had the toughest journey to the postseason. Size of point represents size of conference."</span>,</span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Average Strength of Schedule (SOS)"</span>,</span>
-<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">""</span>,</span>
-<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"By: Jake Ostdiek | Source: SportsDataverse for R &amp; SportsReference"</span></span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>),</span>
-<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>),</span>
-<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
-<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
-<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">color=</span><span class="st">"deepskyblue3"</span>,</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">13</span>)) <span class="sc">+</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">data=</span>chart2_data,</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> avg_conf_sos, <span class="at">y =</span> <span class="fu">reorder</span>(Conf, avg_conf_sos), <span class="at">label =</span> Conf),</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"black"</span>,</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">hjust =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"rect"</span>, <span class="at">fill=</span><span class="st">"blue"</span>, <span class="at">alpha=</span><span class="fl">0.1</span>,</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>           <span class="at">xmin=</span><span class="fl">8.1</span>, <span class="at">xmax=</span><span class="cn">Inf</span>,</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>           <span class="at">ymin=</span><span class="dv">5</span>, <span class="at">ymax=</span><span class="cn">Inf</span>) <span class="sc">+</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span><span class="fl">10.7</span>, <span class="at">y=</span><span class="fl">5.8</span>, <span class="at">label=</span><span class="st">"Tough Schedules"</span>), <span class="at">size=</span><span class="dv">3</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span><span class="fl">3.3</span>, <span class="at">y=</span><span class="dv">8</span>, <span class="at">label=</span><span class="st">"B1G had the toughest</span><span class="sc">\n</span><span class="st">strength of schedule (11.38)"</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>)) <span class="sc">+</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span><span class="dv">9</span>, <span class="at">y=</span><span class="dv">3</span>, <span class="at">label=</span><span class="st">"The SEC and Big 12 are close,</span><span class="sc">\n</span><span class="st">but have two fewer schools"</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>)) <span class="sc">+</span></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"The Big Ten dominated with a gauntlet of schedules"</span>,</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"The B1G had the toughest journey to the postseason. Size of point represents size of conference."</span>,</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Average Strength of Schedule (SOS)"</span>,</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Conference"</span>,</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"By: Jake Ostdiek | Source: SportsDataverse for R &amp; SportsReference"</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>),</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>),</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -581,8 +588,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The immediate counterargument for non-conference blowouts usually sounds like this, “Oh yeah, name one tough opponent you’ve played.” That’s fair to ask of someone prideful in their conference. Padding the stat sheet against mid-majors before the new year has become something of a college basketball tradition.</p>
 <p>But the Big Ten wasn’t hiding from anyone.</p>
 <p>When mapping the average Strength of Schedule (SOS) across the top conferences, the Big Ten stands its ground at the top. They didn’t just rack up high point differentials against non-conference teams, they did it against the toughest competition in the country as well. This wasn’t the product of a few outstanding teams carrying the rest of the conference either. From top to bottom, the conference was ruthless, ensuring any team that came out of the Big Ten regular season was battle-tested and ready for a fight.</p>
+<p>The SEC and Big 12 would argue they are right up there with the Big Ten, but in reality, those two conferences both have 16 teams while the Big Ten has 18. With two additional teams, a strong average strength of schedule becomes even tougher to maintain. More teams leads to more competition, and where some conferences struggle with their level of competition, the Big Ten took it in stride to continue elevating their performance.</p>
 <p>Regular season metrics are great, but the NCAA Tournament is a lie detector test disguised as college basketball tournament. If a conference is truly the best, it has to be able to continue their regular-season hype into reaffirming tournament success.</p>
-<p>To measure this, we don’t justlook at how many bids a conference received, we look at efficiency. How successfully did a conference’s total number of teams survive from round to round?</p>
+<p>To measure this, we don’t just look at how many bids a conference received, we look at efficiency. How successfully did a conference’s total number of teams survive from round to round?</p>
 <p>The Ultimate Test: March Madness</p>
 <div class="cell">
 <details class="code-fold">
@@ -713,7 +721,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-124"><a href="#cb3-124" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
 <span id="cb3-125"><a href="#cb3-125" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-126"><a href="#cb3-126" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Round of 64 to Round of 32"</span>,</span>
-<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Number of Teams Advanced"</span>,</span>
+<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"# of Teams Advanced"</span>,</span>
 <span id="cb3-128"><a href="#cb3-128" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
 <span id="cb3-129"><a href="#cb3-129" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
 <span id="cb3-130"><a href="#cb3-130" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>(),</span>
@@ -739,7 +747,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-150"><a href="#cb3-150" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
 <span id="cb3-151"><a href="#cb3-151" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-152"><a href="#cb3-152" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Round of 32 to Sweet 16"</span>,</span>
-<span id="cb3-153"><a href="#cb3-153" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Number of Teams Advanced"</span>,</span>
+<span id="cb3-153"><a href="#cb3-153" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"# of Teams Advanced"</span>,</span>
 <span id="cb3-154"><a href="#cb3-154" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
 <span id="cb3-155"><a href="#cb3-155" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
 <span id="cb3-156"><a href="#cb3-156" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>(),</span>
@@ -765,7 +773,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-176"><a href="#cb3-176" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
 <span id="cb3-177"><a href="#cb3-177" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-178"><a href="#cb3-178" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Sweet 16 to Elite Eight"</span>,</span>
-<span id="cb3-179"><a href="#cb3-179" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Number of Teams Advanced"</span>,</span>
+<span id="cb3-179"><a href="#cb3-179" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"# of Teams Advanced"</span>,</span>
 <span id="cb3-180"><a href="#cb3-180" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
 <span id="cb3-181"><a href="#cb3-181" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
 <span id="cb3-182"><a href="#cb3-182" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>(),</span>
@@ -792,7 +800,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-203"><a href="#cb3-203" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
 <span id="cb3-204"><a href="#cb3-204" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-205"><a href="#cb3-205" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Elite Eight to Final Four"</span>,</span>
-<span id="cb3-206"><a href="#cb3-206" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Number of Teams Advanced"</span>,</span>
+<span id="cb3-206"><a href="#cb3-206" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"# of Teams Advanced"</span>,</span>
 <span id="cb3-207"><a href="#cb3-207" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
 <span id="cb3-208"><a href="#cb3-208" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
 <span id="cb3-209"><a href="#cb3-209" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>(),</span>
@@ -817,9 +825,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>The conversion rates and number of teams advanced tells the final, undeniable piece of the story. While the SEC, Big 12 and others saw their representation fall off in the opening weekend, the Big Ten stayed true to what they knew, and won. From the Round of 64 to the Sweet 16, the Big Ten advanced 66.67% of their teams successfully while the SEC advanced 40% and the Big 12 advanced 37.5%. The Big Ten added a cherry on top and broke a conference record for number of teams that advanced to the Sweet 16, with 6 teams advancing (previously 4).</p>
-<p>The success doesn’t stop there. From the Sweet 16 to the Elite Eight, the Big Ten was the only conference to advance more than one team to the Elite Eight, and they advanced four, breaking yet another conference record for number of teams in the Elite Eight (previously three). The high percentage of B1G teams surviving the early rounds of chaos proves that their regular season metrics weren’t by chance. They were prepared for the battlefield that is March Madness because their entire season trained to show up when it mattered most.</p>
+<p>The success doesn’t stop there. From the Sweet 16 to the Elite Eight, the Big Ten was the only conference to advance more than one team to the Elite Eight, and they advanced four, breaking yet another conference record for number of teams in the Elite Eight (previously three). The high percentage of Big Ten teams surviving the early rounds of chaos proves that their regular season metrics weren’t by chance. They were prepared for the battlefield that is March Madness because their entire season trained to show up when it mattered most.</p>
 <p>The Big Ten’s Final Statement: The Championship</p>
-<p>You can have the best point differentials and the highest SOS, but without a banner to raise, the argument quickly falls apart. The Big Ten answered that with a exclamation point, with Michigan ultimately cutting down the nets to win it all.</p>
+<p>You can have the best point differentials and the highest SOS, but without a banner to raise, the argument quickly falls apart. The Big Ten answered that with an exclamation point, with Michigan ultimately cutting down the nets to win it all.</p>
 <p>The 2025-2026 season wasn’t up to debate. From the opening tip-off of the non-conference schedule to the final buzzer of the National Championship game, the data tells the exact same story basketball enjoyers watched all season. The Big Ten is the king of college basketball.</p>
 
 
